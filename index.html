@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio src="Ishq Hai Ye Ishq Hai Ringtone Download - MobCup.Com.Co.mp3" autoplay loop></audio>
+
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>~माझे खुळे🫂👊🏻!!!!</strong>
+                        <p>
+                            तुझ्या हास्यात माझं विश्व दडलंय,<br>
+                            तुझ्या स्पर्शात आयुष्य फुललंय. <br>
+                            कधी न तुटणारं हे नातं जडलंय, <br>
+                            तुझ्यावरचं प्रेम श्वासांत गुंतलंय. <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
